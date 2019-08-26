@@ -41,7 +41,7 @@ string add(string& s1, string& s2)
 		}
 		else
 		{
-			int tmp = getInt(s1[index2]) + carry;
+			int tmp = getInt(s2[index2]) + carry;
 			carry = tmp / 36;
 			res.push_back(tmp % 36);
 			--index2;
@@ -93,7 +93,7 @@ string add2(string str1, string str2)
 	}
 	while (len2 >= 0)
 	{
-		temp = nums[str1[len2]] + carrier;
+		temp = nums[str2[len2]] + carrier;
 		carrier = 0;
 		if (temp > 35) { temp -= 36; carrier = 1; }
 		res = renums[temp] + res;
@@ -135,8 +135,8 @@ string add3(string& s1, string s2)
 }
 int main()
 {
-	string s1 = "34fdd3";
-	string s2 = "455";
+	string s1 = "uv";
+	string s2 = "xyz";
 	cout << add(s1,s2) << endl;
 	cout << add2(s1, s2) << endl;
 	cout << add3(s1, s2) << endl;

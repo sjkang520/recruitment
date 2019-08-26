@@ -1,4 +1,4 @@
-#include "Singleton.h"
+﻿#include "Singleton.h"
 #include <stdlib.h>
 #include <stdio.h>
 //这里注释的就是利用静态变量自动释放内存，但是这种方法在模板基类里行不通，我不知道为什么
